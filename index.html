@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+    <link rel="stylesheet" href='styles.css'>
+</head>
+<body>
+    <h1>Library</h1>
+    <button id='newBook'>New Book</button>
+    <div class='form' id='bookForm'>
+        <form id='form' action='/script.js' class='form-container'>
+            <h1>Add a new Book</h1>
+            <div id='input'>
+                <!-- <label for='title'><b>Title</b></label> -->
+                <p><input type='text' id='title' placeholder="Book Title" name="title" required/></p>
+
+                <!-- <label for='author'><b>Author</b></label> -->
+                <p><input type='text' id='author' placeholder='Author' name='author' required></p>
+
+                <!-- <label for='pageNumber'><b>Number of pages</b></label> -->
+                <p><input type='numbers' id='pages' placeholder="pages" name='pages' required></p>
+
+                <p><label for='readbook'>I have read the book</label>
+                <input type='checkbox' id='read' name='readbook' value='read'></p>
+
+                <!-- <label for='notread'>I have not read this book</label>
+                <input type='checkbox' id='notread' name='notread' value='notread'> -->
+
+                <button type='submit' class='submitBtn'>Submit book</button>
+                <button type='submit' class='btnCancel'>Cancel</button>
+            </div>
+        </form>
+    </div>
+    <div id='libraryContainer'></div>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>

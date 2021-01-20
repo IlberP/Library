@@ -1,0 +1,97 @@
+h1 {
+    text-align: center;
+    background-color: lemonchiffon
+}
+
+body{
+    background-color: lightblue;
+}
+
+#newBook{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 60px;
+}
+
+#newBook:hover{
+    opacity: .9;
+    background: white;
+}
+
+.form{
+    display: none;
+    position: fixed;
+    align-items: center;
+    right: 300px;
+    border: 3px solid #f1f1f1;
+    height: 300px;
+    width: 200px;
+    background-color: lemonchiffon;
+    
+}
+
+#libraryContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: url('bookshelf.png');
+    background-size: 100% 100%;
+    
+    position: absolute;
+    
+    
+    
+  }
+
+.book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid black;
+    height: 200px;
+    width: 150px;
+    padding: 10px;
+    margin: 20px;
+    background-image: url('book.png');
+    background-size: cover;
+    
+
+}
+
+.title {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.author {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.pages{
+    font-weight: bold;
+    margin-top: 20px
+}
+
+.read{
+    margin-top: 20px;
+    border-radius: 30px;
+    border-color: black;
+}
+
+.read:hover{
+    opacity: .7;
+}
+
+.remove{
+    background-color: yellow;
+    margin-top: auto;
+    border-radius: 30px;
+    border-color: black;
+}
+
+.remove:hover{
+    opacity: 0.7;
+}
